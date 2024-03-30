@@ -9,11 +9,11 @@
 
 > Note that you need all the respositories cloned in the top level directory.
 > Should look something like:
-> .
-> ├── Tramoove_app
-> ├── bustruck-service
-> ├── infra
-> └── users-service
+> .  
+> ├── Tramoove_app  
+> ├── bustruck-service  
+> ├── infra  
+> └── users-service  
 
 then access to the infra/skaffold directory and run the following command:
 
