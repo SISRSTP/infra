@@ -8,7 +8,7 @@
 - Istall [Skaffold](https://skaffold.dev/docs/install/)
 
 > Note that you need all the respositories cloned in the top level directory.
-> Should look something like:
+> Should look something like:  
 > .  
 > ├── Tramoove_app  
 > ├── bustruck-service  
