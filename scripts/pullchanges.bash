@@ -16,7 +16,7 @@ do
     # Fetch the latest changes
     git fetch
     # Pull the latest changes
-    git pull
-    echo "Repository $REPOSITORY updated successfully."
+    #git pull
+    #echo "Repository $REPOSITORY updated successfully."
     )
 done

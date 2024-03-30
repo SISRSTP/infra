@@ -1,0 +1,25 @@
+#Scaffold kubernetes operations for faster development
+
+apiVersion: skaffold/v4beta3
+kind: Config
+manifests:
+  rawYaml:
+    - ../k8s/*.yaml
+
+build:
+  local:
+    push: false # Do not push the image to a registry
+  artifacts:
+    - image: darien0702/sisrstp-client-service
+      context: ../../users-service
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+      builder:
+        local:
+          useDockerCLI: true
+      cacheFrom:
+        - image: gcr.io/sisrstp/sisrstp
